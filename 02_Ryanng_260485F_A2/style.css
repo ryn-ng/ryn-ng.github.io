@@ -1,0 +1,266 @@
+*{border-radius:30px}
+@font-face {
+font-family: watermelon;
+src: url(fonts/WatermelonSugar.ttf);
+}
+button{font-size: 2em}
+ul li{font-size: 1.2em}
+*{font-family:watermelon;}
+body {
+height: 100%;
+background:lightblue;
+align-items: center; 
+}
+li , legend , p{font-size:1.5em}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.details{background:#4BB8FA}
+.origin{background:#2C5EAD;margin:0;padding: 0;}
+.game1{background:#1591DC;margin:0;padding: 0;}
+
+.rulesAndgameplay{background:#4BB8FA}
+
+.menu button{
+width: 100%;
+display: block;
+box-sizing: border-box;
+text-align: center;
+}
+.section{
+border:none;
+}
+.menu button:hover{
+background:lightblue;
+color:black;
+}
+.menu button{color:white;background:#87CEEB;padding:0.5em;}
+#page0{background:lightblue}
+#page1{background:lightblue}
+#page2{background:lightblue}
+#page3{background:lightblue}
+
+
+#volleyballID{display:none}
+
+.menu.menuShow{
+width: 100%;
+display: block;
+box-sizing: border-box;
+text-align: center;
+}
+#gameArea {
+position: relative;
+width: 250px;
+height: 250px;
+border: 2px solid black;
+margin:auto; 
+background-image:url('images/court.jpeg');
+background-size: cover;
+background-position: center;
+}
+#volleyballID.show {
+display: block;
+position: absolute;
+max-width: 100%;
+width : 20%;
+height : auto;
+border-radius: 50%;
+transition: all 0.5s;
+}
+.overNet {
+transform: scale(0.6);
+opacity: 0.8;
+}
+
+#startBtn{
+margin:5px;
+background:#1591DC;
+color:white;
+}
+
+.roles{
+background:#C4E2F5;
+}
+
+#startBtn:hover{
+background:lightblue;
+color:black;
+}
+#page0 {
+text-align: center;
+align-items: center;
+}
+ul li{
+text-align: center;
+margin: 0 auto;
+padding: 20px;
+}
+
+ul{
+list-style-position: inside;
+display: inline-block; 
+text-align: left;
+padding: 0;
+margin: 0 auto;
+}
+#page2{border:3px solid white}
+
+@keyframes VolleyballFrames{
+
+0%{rotate:0deg}
+25%{rotate:90deg}
+50%{rotate:180deg}
+100%{rotate:270deg}
+
+}
+#volleyballID.anim1{animation: VolleyballFrames 1s;}
+
+.court{
+background-image:url('images/court1.jpeg');
+background-size: cover;
+background-position: center;
+display:flex;
+flex-wrap:wrap;
+width: 550px;
+height: 550px;
+border:3px solid white;
+margin:auto; 
+}
+.wing,.middle,.setter,.opposite,.libero{
+background-image:url('images/player.jpeg');
+background-size: cover;
+flex:1;
+margin:5px;
+width: 100px;
+height: 100px;
+}
+.front,.back{flex:100%}
+.game0{border:3px solid black}
+
+.popup {
+position: fixed;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: white;
+border: 1px solid black;
+opacity: 0;
+visibility: hidden;
+transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+#closeBtn{
+color:white;
+background:#87CEEB;
+}
+#closeBtn:hover{
+color:black;
+background:lightblue;
+}
+
+.popup.show {
+opacity: 1;
+visibility: visible;
+}
+
+#page1{
+text-align:center;
+}
+
+#hamIcon{display:none;}
+
+nav ul li{display:inline;}
+
+.content{
+display:flex;
+}
+.navbar{
+flex:0 0 200px;
+border:3px solid white;
+}
+#pagecontainer{
+flex:1;
+border:3px solid white;
+}
+.page{
+display:none;
+}
+header{
+text-align: center;
+background-color: lightblue;
+}
+
+.setting,
+.receive {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+
+    background-image: url("images/vbsprite.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px 50px;
+}
+
+.receive {
+    background-position: 0 0;
+}
+
+.setting {
+    background-position: -50px 0;
+}
+
+
+@media (max-width: 800px)/*if screen size below 768*/
+{
+#qrCodeImg{display:none;} /*hide QR code */
+h1{background: lightblue;}
+h1::after{content:"(mobile)";}
+#hamIcon{display:block;}
+
+.content{
+display:block;
+width:100%;
+}
+.navbar{
+flex:0 0 200px;
+border:0px;
+}
+.menu{display:none;}
+
+
+header {
+display: flex;
+justify-content: space-between;
+}
+
+
+header img {
+display: block;
+max-width: 100%;
+height: auto;
+border-radius: 50%;
+}
+
+*{text-align:left;
+border-radius:15px
+}
+h1,h2,ol{margin:10px}
+.court{
+width: 250px;
+height: 250px;
+}
+.wing,.middle,.setter,.opposite,.libero{
+flex:1;
+width: 70px;
+height: 70px;
+text-align:center;
+}
+#gameArea {
+width: 250px;
+height: 250px;
+}
+.content{
+display:inline-block;
+}
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link href="style.css" rel="stylesheet">
+	<script src="main.js" defer></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/vbicon.png">
+	<link rel="manifest" href="manifest.json" >
+	<title>volleyball</title>
+</head>
+<body>
+	<header>
+		<h1>VOLLEYBALL</h1>
+		<button id="hamIcon">
+			<img src="images/volleyball.jpeg" alt="volleyball" width="100" height="100">
+		</button>
+	</header>
+	<div class="content">
+		<nav class="navbar">
+			<div class="menu">
+				<button id="page0btn">volleyball</button>
+				<button id="page1btn">recieving<span class="receive"></span></button>
+				<button id="page2btn">setting<span class="setting"></span></button>
+			</div>
+		</nav>
+		<main id="pagecontainer">
+			<div class="page" id="page0">
+				<article class="origin">
+					<h2> volleyball Origin and History </h2>
+					<ol>
+						<li>Invented in 1895 by William G. Morgan</li>
+						<li>It Was Originally Called Mintonette and eventually renamed to volleyball due to the nature of play</li>
+					</ol>
+				</article>
+				<article class="rulesAndgameplay">
+					<h2> Rules And Gameplay </h2>
+					<ol>
+						<li>there are 2 teams of 6 players</li>
+						<li>there is a maximum of 3 touches before returning the ball over the net</li>
+						<li>to score the ball must land in the opponents field/court</li>
+						<li>the net height is based on age and gender</li>
+						<li>there is 3 players at the front court and 3 at the back court the back court players only can jump before a 3 meter line from the net to the court to attack while the libero(role explained later) are not allowed to jump and attack the ball at all</li>
+					</ol>
+				</article>
+				
+				<article class="game0">
+				<h2>click on the players to find out their position and what they do</h2>
+				<div class="court">
+					<div class="front">
+						<button class="wing"></button>
+						<button class="middle"></button>
+						<button class="setter"></button>
+					</div>
+					<div class="back">
+						<button class="opposite"></button>
+						<button class="libero"></button>
+						<button class="wing"></button>
+					</div>
+				</div>
+				<div class="popup">
+					<p class="playerroles"></p>
+					<button id="closeBtn">close</button>
+				</div>
+				</article>
+			</div>
+			<div class="page" id="page1">
+				<article class="game1">
+					<h2>Volleyball Clicker</h2>
+					<p>click to recieve the volleyball when it comes to the bottom side of the court</p>
+					<h2 id="scoreBox">Score:</h2>
+					<div id="gameArea">
+						<button id="startBtn">click to start game</button>
+						<img src="images/volleyball.jpeg" alt="volleyball" id="volleyballID" class ="volleyball">
+					</div>
+				</article>
+				<div class="details">
+					<article class="facts">
+						<h2> recieving facts</h2>
+						<ol>
+							<li>to recieve a spike you need a reaction time of 180ms-250ms</li>
+							<li>the better the recieve the better your attack will become</li>
+						</ol>
+					</article>
+					<article class="howrecieve">
+						<h2>how to form a recieving platform</h2>
+						<ol>
+							<li>place both hands face up and make sure the fingers are touching one another</li>
+							<li>form a 45 degree angle with both hands</li>
+							<li>make both ur thumbs touch each other</li>
+							<li>straighten ur arm and recieve the ball at about where you would wear a watch</li>
+						</ol>
+					</article>
+				</div>
+			</div>
+			<div class="page" id="page2">
+				<h2>setter quiz</h2>
+				<fieldset>
+					<legend>1. whats the main job of a setter</legend>
+						<ol>
+							<li><input type="radio" name="q1" value="block"> to block the ball</li>
+							<li><input type="radio" name="q1" value="recieve"> to recieve the ball</li>
+							<li><input type="radio" name="q1" value="ans"> to set the ball</li>
+							<li><input type="radio" name="q1" value="spike"> to spike the ball</li>
+						</ol>
+				</fieldset>
+				<fieldset>
+					<legend>2. where should the setter stand</legend>
+						<ol>
+							<li><input type="radio" name="q2" value="left"> left side of the court</li>
+							<li><input type="radio" name="q2" value="middle"> in the middle of the court</li>
+							<li><input type="radio" name="q2" value="right"> right side of the court</li>
+							<li><input type="radio" name="q2" value="ans"> near the net</li>
+						</ol>
+				</fieldset>
+				<fieldset>
+					<legend>3. how to set the ball</legend>
+						<ol>
+							<li><input type="radio" name="q3" value="flat"> flat palms</li>
+							<li><input type="radio" name="q3" value="ans"> form a triangle with your thumb and index finger</li>
+							<li><input type="radio" name="q3" value="close"> close ur fists</li>
+						</ol>
+				</fieldset>
+				<fieldset>
+					<legend>4. how to project the ball forward when setting</legend>
+						<ol>
+							<li><input type="radio" name="q4" value="arms"> use ur arms to push the ball up</li>
+							<li><input type="radio" name="q4" value="wrists"> use your wrist to push the ball up</li>
+							<li><input type="radio" name="q4" value="legs"> bend ur legs and extend them when you set the ball</li>
+							<li><input type="radio" name="q4" value="ans"> all of the above</li>
+						</ol>
+				</fieldset>
+				<fieldset>
+					<legend>5. what skills are needed to be a setter</legend>
+						<ol>
+							<li><input type="radio" name="q5" value="set"> setting</li>
+							<li><input type="radio" name="q5" value="spike"> spiking</li>
+							<li><input type="radio" name="q5" value="recieve"> recieving</li>
+							<li><input type="radio" name="q5" value="block"> blocking</li>
+							<li><input type="radio" name="q5" value="serve"> serving</li>
+							<li><input type="radio" name="q5" value="ans"> all of the above</li>
+						</ol>
+				</fieldset>
+				<fieldset>
+					<legend>what is your height(cm)</legend>
+					<input type="number" name="q6" id="playerHeight">
+				</fieldset>
+				<button id="submit">submit quiz</button>
+				<h3 id="marks">Not submitted</h3>
+			</div>
+		</main>
+	</div>
+<footer>
+	<img id="qrCodeImg" src="images/qrcodeimg.png" alt="qrcode" width="100" height="100">
+</footer>
+</body>
+</html>
+

@@ -1,0 +1,14 @@
+{ 
+	"name": "WebDev Demo14 PWA",
+	"short_name": "14PWA",
+	"start_url": "index.html",
+	"display": "standalone",
+	"background_color": "#ffffff",
+	"theme_color": "#00FF00",
+	"icons": [
+		{ "src": "images/vbicon.png",
+		"sizes": "64x64",
+		"type": "image/png"
+		}
+	]
+}
